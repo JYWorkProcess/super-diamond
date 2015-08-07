@@ -87,4 +87,12 @@ public class PropertiesConfigurationFactoryBean implements FactoryBean<Propertie
 		}
 		return __configuration;
 	}
+	
+	/**
+	 * 是否初始化
+	 * @return
+	 */
+	public static boolean isInit() {
+		return init;
+	}
 }
