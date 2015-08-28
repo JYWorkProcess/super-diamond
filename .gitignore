@@ -1,4 +1,5 @@
 /.project
+.DS_Store
 /.settings
 /super-diamond-client/target
 /super-diamond-client/.classpath
