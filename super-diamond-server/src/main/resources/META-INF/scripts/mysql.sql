@@ -1,5 +1,7 @@
 CREATE DATABASE edu_diamond;
 
+USE `edu_diamond`;
+
 CREATE TABLE `CONF_USER` (
   `ID` int(11) NOT NULL,
   `USER_CODE` varchar(32) DEFAULT NULL,
@@ -66,3 +68,6 @@ CREATE TABLE `CONF_PROJECT_CONFIG` (
   `BUILD_TIME` DATETIME DEFAULT NULL,
   PRIMARY KEY (`CONFIG_ID`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+
+insert into conf_user(id,USER_code,USER_NAME,PASSWORD,CREATE_TIME) values(1,'admin','admin','670b14728ad9902aecba32e22fa4f6bd',current_timestamp() );
